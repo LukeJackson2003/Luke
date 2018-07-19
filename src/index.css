@@ -1,5 +1,10 @@
+* {
+  -webkit-transition: all 1s;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
 }

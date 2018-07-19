@@ -1,1 +1,13 @@
 
+.App{
+  height: 100vh;
+  padding: 20px;
+}
+
+.AppCoreBg {
+  background-color:  darkred;
+}
+
+.AppCoreColours {
+color: rgb(251, 255, 9);
+}
