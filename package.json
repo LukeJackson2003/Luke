@@ -2,6 +2,7 @@
   "name": "luke",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://LukeJackson2003.github.io/Luke",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -11,6 +12,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
