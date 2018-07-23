@@ -11,3 +11,9 @@
 .AppCoreColours {
 color: rgb(255, 251, 9);
 }
+
+.AppChangeColours {
+  height: 100vh;
+  background-color: rgb(255, 251, 9);
+  color: darkred;
+}

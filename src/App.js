@@ -26,6 +26,7 @@ class App extends Component {
     this.initCoreBgSection = this.initCoreBgSection.bind(this);
     this.initCoreColoursSection = this.initCoreColoursSection.bind(this);
     this.initFinalSection = this.initFinalSection.bind(this);
+    this.initColourChangeSection = this.initColourChangeSection.bind(this);
   }
 
   
@@ -65,6 +66,17 @@ initCoreBgSection() {
   }, 500);
   }
   
+  initColourChangeSection() {
+    setTimeout (() => {
+    let sections = this.state.sections;
+
+    this.setState({
+      class: classNames('AppChangeColours'),
+      sections:sections
+    });
+    }, 500);
+  }
+
   render() {
     return (
       <div className={this.state.class}>
@@ -87,16 +99,16 @@ initCoreBgSection() {
         /**<br/>
         * That's better...<br/>
         * Wait, we can't read the text properly now,<br/>
-        * that's not helpful<br/>
+        * that's not helpful,<br/>
         * let's fix it.<br/>
         color: rgb(251, 255, 9); <br/>
         */<br/><br/>
       </Typewriter>
 
-      <Typewriter typing={this.state.sections.finalSection.typing}>
+      <Typewriter typing={this.state.sections.finalSection.typing} onTypingEnd={this.initColourChangeSection}>
         /**<br/>
-        * There, that looks better<br/>
-        * Things I have learned in Dev. while constructing this:<br/>
+        * There, we can read it now.<br/>
+        * Things I have learned in Dev. while coding this:<br/>
         * navigating the command line - cd pwd ect.<br/>
         * Creating a Github account<br/>
         * Homebrew and yarn<br/>
@@ -108,7 +120,12 @@ initCoreBgSection() {
         * How to write and change the colour of text, and add breaks in lines of text<br/>
         * How to change the background colour and area of the screen it affects<br/>
         * How to order different actions by changing when different functions are called.<br/>
-        */<br/>
+        * <br/>
+        * Hang on, that link isn't legible,<br/>
+        * I know, I'll flip the colours...<br/>
+        background-color: rgb(255, 251, 9);<br/>
+        color: darkred;<br/>
+        */<br/><br/>
       </Typewriter>
 
 
