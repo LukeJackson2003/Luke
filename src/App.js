@@ -85,19 +85,20 @@ initCoreBgSection() {
         * Hello My name is Luke, I am a year 10 secondary school student<br/>
         *<br/>
         * This is my website, written to showcase my programming skills.<br/>
+        * (hopefully it impresses you)<br/>
         */<br/><br/>
       </Typewriter>
       
       <Typewriter typing={this.state.sections.coreBg.typing} onTypingEnd={this.initCoreColoursSection}>
       /**<br/>
-        * This would look better with a background colour to make it stand out.<br/>
+        * This would look better with a background colour to make it stand out, white backgrounds aren't very interesting.<br/>
         background-color:  darkred;<br/>
         */<br/><br/>
       </Typewriter>
 
       <Typewriter typing={this.state.sections.coreColours.typing} onTypingEnd={this.initFinalSection}>
         /**<br/>
-        * That's better...<br/>
+        * That looks better...<br/>
         * Wait, we can't read the text properly now,<br/>
         * that's not helpful,<br/>
         * let's fix it.<br/>
@@ -108,7 +109,7 @@ initCoreBgSection() {
       <Typewriter typing={this.state.sections.finalSection.typing} onTypingEnd={this.initColourChangeSection}>
         /**<br/>
         * There, we can read it now.<br/>
-        * Things I have learned in Dev. while coding this:<br/>
+        * Things I have learned in Dev. while coding this (this'll be a long list):<br/>
         * navigating the command line - cd pwd ect.<br/>
         * Creating a Github account<br/>
         * Homebrew and yarn<br/>
@@ -121,8 +122,8 @@ initCoreBgSection() {
         * How to change the background colour and area of the screen it affects<br/>
         * How to order different actions by changing when different functions are called.<br/>
         * <br/>
-        * Hang on, that link isn't legible,<br/>
-        * I know, I'll flip the colours...<br/>
+        * Hang on, that link isn't legible, (also dark blue on dark red doesn't look good  at all!)<br/>
+        * I know, I'll invert the colours, blue on yellow would look better<br/>
         background-color: rgb(255, 251, 9);<br/>
         color: darkred;<br/>
         */<br/><br/>
