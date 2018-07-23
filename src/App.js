@@ -62,7 +62,7 @@ initCoreBgSection() {
       class: classNames('App', 'AppCoreBg', 'AppCoreColours'),
       sections:sections
     });
-  }, 1000);
+  }, 500);
   }
   
   render() {
@@ -70,7 +70,7 @@ initCoreBgSection() {
       <div className={this.state.class}>
       <Typewriter typing={1} onTypingEnd={this.initCoreBgSection}>
         /**<br/>
-        * Hi My name is Luke, I am a year 10 secondary school student<br/>
+        * Hello My name is Luke, I am a year 10 secondary school student<br/>
         *<br/>
         * This is my website, written to showcase my programming skills.<br/>
         */<br/><br/>
@@ -79,26 +79,30 @@ initCoreBgSection() {
       <Typewriter typing={this.state.sections.coreBg.typing} onTypingEnd={this.initCoreColoursSection}>
       /**<br/>
         * This would look better with a background colour to make it stand out.<br/>
-        */<br/>
-        background-color:  darkred;<br/><br/>
+        background-color:  darkred;<br/>
+        */<br/><br/>
       </Typewriter>
 
       <Typewriter typing={this.state.sections.coreColours.typing} onTypingEnd={this.initFinalSection}>
         /**<br/>
-        * We can't read the text properly now, let's change that.<br/>
-        */<br/>
-        color: rgb(251, 255, 9); <br/><br/>
+        * That's better...<br/>
+        * Wait, we can't read the text properly now,<br/>
+        * that's not helpful<br/>
+        * let's fix it.<br/>
+        color: rgb(251, 255, 9); <br/>
+        */<br/><br/>
       </Typewriter>
 
       <Typewriter typing={this.state.sections.finalSection.typing}>
         /**<br/>
+        * There, that looks better<br/>
         * Things I have learned in Dev. while constructing this:<br/>
         * navigating the command line - cd pwd ect.<br/>
         * Creating a Github account<br/>
         * Homebrew and yarn<br/>
         * Basic Git commands and repo setup: <a href="https://github.com/LukeJackson2003/Luke" target="_blank">https://github.com/LukeJackson2003/Luke</a><br/>
         * Creating a react app<br/>
-        * Deploying to Github pagers<br/>
+        * Deploying to Github pages<br/>
         * How to set up a webpage using Java Script, CSS and HTML<br/>
         * basics of how to code in Java Script and CSS, such as<br/>
         * How to write and change the colour of text, and add breaks in lines of text<br/>
